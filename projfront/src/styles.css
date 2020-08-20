@@ -1,0 +1,149 @@
+.btn,
+.jumbotron,
+.nav:hover{
+    border-radius: 0px;
+}
+
+body{
+    background:white;
+    
+}
+.menu{
+    background-color: papayawhip;
+    width:100%;
+    height:80px;
+}
+
+
+  .instagram{
+    font-size:3em;
+    padding-left:200px;
+    color:red;
+  }
+  
+  .youtube{
+    font-size:3em;
+    padding-left:160px;
+    color:red;
+  
+  }
+  .twitter{
+    font-size:3em;
+    padding-left:200px;
+    color:blue;
+  
+  }
+  .facebook{
+    font-size:3em;
+    padding-left:200px;
+    color:blue;
+  
+  }
+  .googleplus{
+    font-size:3em;
+    padding-left:200px;
+    color:red;
+  }
+  .contact{
+    text-align: center;
+    padding-bottom: 100px;
+  }  
+  .signup{
+      background-color: #343a40;
+      padding-top:0px;
+      border-bottom: #343a40;
+      
+  }
+  .Footer{
+    
+      height:250px;
+      background-color: peachpuff;
+      padding-top: 2cm;
+  }
+  .BUTTON{
+        padding-bottom: 1cm;
+  }
+  .signupmessage{
+    padding-left:16cm;
+    padding-top:1cm
+  }
+  .Online{
+    list-style-type:none;
+  padding-top:25px;
+  font-weight: 600;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+.links{
+  list-style-type:none;
+  padding-top: 12px;
+  padding-left: 45px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #696b79;
+  font-weight: 600;
+  font-size: 18px;
+}
+.Online1{
+  list-style-type:none;
+padding-top:25px;
+font-weight: 600;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px;
+padding-left:50px;
+}
+.links1{
+  list-style-type:none;
+  padding-top: 12px;
+  padding-left: 65px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+  color: #696b79;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contact{
+  padding-top:0.4cm;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:540;
+ 
+}
+
+.carousel-item active{
+  transition:-webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition :transform 0.5s ease,-webkit-transform 0.5s ease;
+  -webkit-backface-visibility:visible;
+  backface-visibility:visible;
+
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
