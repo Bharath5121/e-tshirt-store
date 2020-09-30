@@ -1,28 +1,53 @@
-// category is something that says  winter collection summer collection disney collection
-//if some backend operator wants to add products based on the category and this will be the feild where it can be done
-//actually what we are doing is we are storing the category field in the database with name 
-//what here it really does is if we are creating categories like winter sale,summer sale,special edition,cllasics and so on all these 
-//goes into a collection the mongodb
+const express = require("express");
+const router = express.Router();
 
+const {
+  getCategoryById,
+  createCategory,
+  getCategory,
+  getAllCategory,
+  updateCategory,
+  removeCategory
+} = require("../controllers/category");
+const { isSignedIn, isAdmin, isAuthenticated } = require("../controllers/auth");
+const { getUserById } = require("../controllers/user");
 
-const mongoose=require('mongoose');
+//params
+router.param("userId", getUserById);
+router.param("categoryId", getCategoryById);
 
-const categorySchema = new mongoose.Schema(
-    {
+//actual routers goes here
 
-      name: {
+//create
+router.post(
+  "/category/create/:userId",
+  isSignedIn,
+  isAuthenticated,
+  isAdmin,
+  createCategory
+);
 
-            type:String,
-            trim:true,
-             required :true,  //we need required to be true because if some backend technicaloperator wants to create a category than this wiil be the only feild
-             unique:true
-        },
+//read
+router.get("/category/:categoryId", getCategory);
+router.get("/categories", getAllCategory);
 
-    },
+//update
+router.put(
+  "/category/:categoryId/:userId",
+  isSignedIn,
+  isAuthenticated,
+  isAdmin,
+  updateCategory
+);
 
-    {timestamps:true} //records the time and stores the time whenever a new entry is made through this schema and see  }, 
-    
-    );
+//delete
 
-    module.exports=mongoose.model("Category",categorySchema);
+router.delete(
+  "/category/:categoryId/:userId",
+  isSignedIn,
+  isAuthenticated,
+  isAdmin,
+  removeCategory
+);
 
+module.exports = router;
