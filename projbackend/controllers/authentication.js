@@ -7,6 +7,7 @@ const jwt =require("jsonwebtoken"); //for craeting tokens
 const expressJwt=require("express-jwt");//for checking if the user is logged in or not is sjjDBCNDBCHJDVCNX VHDVC xBVCXGC DBC
 
 //EKFKLEWNFNDWMFNRJKNGJRNGNRJGRJTBGJTGEVBD CBC BWD
+//NABDHBSDNSVSHVHVDs
 exports.signup=(req,res)=>{
     //we need to handle the errors thrown by the route here 
     const error = validationResult(req);
