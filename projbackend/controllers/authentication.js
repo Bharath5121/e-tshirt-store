@@ -4,9 +4,9 @@
 const User =require("../models/user");//we need to bring the user model into the controllers to work on the authentication as it contains the schema and here User name is  same as what we throw from the module.export
 const { check,validationResult } = require('express-validator');//this line is used here also for using validation Result
 const jwt =require("jsonwebtoken"); //for craeting tokens
-const expressJwt=require("express-jwt");//for checking if the user is logged in or not
+const expressJwt=require("express-jwt");//for checking if the user is logged in or not is sjjDBCNDBCHJDVCNX VHDVC xBVCXGC DBC
 
-
+//EKFKLEWNFNDWMFNRJKNGJRNGNRJGRJTBGJTG
 exports.signup=(req,res)=>{
     //we need to handle the errors thrown by the route here 
     const error = validationResult(req);
