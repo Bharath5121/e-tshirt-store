@@ -1,5 +1,7 @@
 const Category=require("../models/category");
 
+//middleware is the important factor here
+
 //middleware for getCtegoryByID
 exports.getCategoryById=(req,res,next,id)=>{   //here id refers to the id of category 
     Category.findById(id).exec((err,category)=>{
